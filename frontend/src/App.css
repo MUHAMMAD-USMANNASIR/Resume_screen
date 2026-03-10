@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --border: #30363d;
+  --accent: #58a6ff;
+  --text: #c9d1d9;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 60px 20px;
+}
+
+/* Header Section */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+.logo-section h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.btn-export {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-export:hover { border-color: var(--accent); }
+
+/* Dropzone Styling */
+.upload-zone {
+  background: var(--panel);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+  transition: 0.2s;
+}
+
+.upload-zone:hover { border-color: var(--accent); }
+
+.custom-upload input { display: none; }
+.upload-content p { color: #8b949e; font-size: 16px; margin: 0; }
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #8b949e;
+  border-bottom: 1px solid var(--border);
+}
+
+td {
+  padding: 20px 15px;
+  border-bottom: 1px solid var(--border);
+}
+
+.name-text { display: block; font-weight: 600; font-size: 18px; color: #fff; margin-bottom: 4px; }
+.summary-text { display: block; font-size: 13px; color: #8b949e; }
+.stars { color: #e3b341; font-size: 20px; letter-spacing: 2px; }
+.badge { background: rgba(56, 139, 253, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; border: 1px solid rgba(56, 139, 253, 0.3); }
+
+.btn-delete {
+  background: transparent;
+  border: none;
+  color: #8b949e;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn-delete:hover { color: #f85149; }
