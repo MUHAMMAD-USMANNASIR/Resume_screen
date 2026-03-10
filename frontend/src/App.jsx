@@ -5,7 +5,7 @@ function App() {
   const [candidates, setCandidates] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const API_URL = "http://localhost:8000";
+  const API_URL = "https://resume-screen1.onrender.com";
 
   const fetchCandidates = async () => {
     try {
